@@ -17,22 +17,69 @@
         <a class="navbar3" href="index.html"><img src="images/KELTON TRACY (1).png" alt="This is a logo of my name"></a>
     </header>
     <main>
-        <img src="images/ds1_logo.webp" alt="This is the logo for the game Dark Souls 1">
-        <img src="images/stormlight-simplifed_v02_dk.webp" alt="This is the logo for a book series that I love">
-        <p>
-            One of my favorite hobbies is playing video games. There are many different games which I enjoy playing, but the series
-            which is my favorite is the Dark Souls Series. This series is infamous for being an incredibly difficult game series.
-            Part of why it is infamous, and part of why I love it, is because to fight enemies in the game, you have to learn 
-            how to fight them by observing their attacks and figuring out the best times to attack them yourself.
-        </p>
-        <p>
-            Another one of my favorite hobbies is to read books. I have been doing this from a very young age, and 
-            am considered to be very well read. My favorite author is Brandon Sanderson, who has written many great books.
-        </p>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 2</div>
+                <img src="images/ds1_logo.webp" style="width:100%">
+                <div class="text">One of my favorite hobbies is playing video games. There are many different games which I enjoy playing, but the series
+                    which is my favorite is the Dark Souls Series. This series is infamous for being an incredibly difficult game series.
+                    Part of why it is infamous, and part of why I love it, is because to fight enemies in the game, you have to learn 
+                    how to fight them by observing their attacks and figuring out the best times to attack them yourself.</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 2</div>
+                <img src="images/stormlight-simplifed_v02_dk.webp" style="width:100%">
+                <div class="text">Another one of my favorite hobbies is to read books. I have been doing this from a very young age, and 
+                    am considered to be very well read. My favorite author is Brandon Sanderson, who has written many great books.</div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+        </div>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
     </main>
     <footer>
         <p>Copyright 2024</p>
         <a href="site-plan.html">Site Plan</a>
     </footer>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 </body>
 </html>
