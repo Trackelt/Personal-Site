@@ -76,3 +76,17 @@ p {
 a {
     font-family: "Exo 2";
 }
+
+.page2grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.secondpics {
+    margin: 5px;
+    justify-self: center;
+}
+.secondpics2 {
+    margin: 5px;
+    justify-self: center;
+    align-self: center;
+}
