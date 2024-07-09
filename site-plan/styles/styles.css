@@ -157,3 +157,15 @@ a {
     from {opacity: .4}
     to {opacity: 1}
   }
+a:link {
+    color: black
+}
+a:visited {
+    color: black
+}
+a:hover {
+    color: #00bf63
+}
+.site_plan:hover {
+    color:#717171
+}
