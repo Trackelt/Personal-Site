@@ -121,7 +121,7 @@ a {
     background-color: rgba(0,0,0,0.8);
   }
 .text {
-    color: #f2f2f2;
+    color: #00bf63;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -130,7 +130,7 @@ a {
     text-align: center;
   }
 .numbertext {
-    color: #f2f2f2;
+    color: #00bf63;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
