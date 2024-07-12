@@ -106,7 +106,7 @@ a {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -121,7 +121,7 @@ a {
     background-color: rgba(0,0,0,0.8);
   }
 .text {
-    color: #00bf63;
+    color: black;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -130,7 +130,7 @@ a {
     text-align: center;
   }
 .numbertext {
-    color: #00bf63;
+    color: black;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
